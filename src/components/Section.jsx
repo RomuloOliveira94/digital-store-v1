@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const Section = ({ title, titleAlign, link, children }) => {
   return (
     <section className="container my-4">
-      <div className="flex items-center justify-between mb-2 w-full">
+      <div className="flex items-center justify-between mb-6 w-full">
         <h1
           className={`text-xl font-bold text-darkgray ${
             titleAlign === "center" ? "mx-auto" : ""

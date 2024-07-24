@@ -1,3 +1,5 @@
+import Gallery from "../components/Gallery";
+import ProductListing from "../components/ProductListing";
 import Section from "../components/Section";
 
 const HomePage = () => {
@@ -8,7 +10,8 @@ const HomePage = () => {
         titleAlign=""
         link={{ text: "Produtos", href: "/products" }}
       >
-        <p>Produtos em destaque</p>
+        <Gallery />
+        <ProductListing />
       </Section>
     </div>
   );
