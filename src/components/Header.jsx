@@ -1,9 +1,13 @@
+import LogoHeader from "./LogoHeader";
+
 const Header = () => {
   return (
-    <div>
-        <h1>header</h1>
-    </div>
-  )
-}
+    <header>
+      <nav className="container">
+        <LogoHeader />
+      </nav>
+    </header>
+  );
+};
 
-export default Header
+export default Header;
