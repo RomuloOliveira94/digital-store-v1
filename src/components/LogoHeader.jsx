@@ -1,6 +1,7 @@
 const LogoHeader = () => {
   return (
     <svg
+      className="w-[253px]"
       width="253"
       height="44"
       viewBox="0 0 253 44"
