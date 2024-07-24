@@ -1,17 +1,20 @@
 import { useState } from "react";
-import LogoHeader from "./LogoHeader";
+import LogoHeader from "./icons/LogoHeader";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [search, setSearch] = useState("");
 
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    window.location.href = `/products?search=${search}`;
+    navigate(`/products?search=${search}`);
   };
 
   return (
     <header className="py-6">
-      <nav className="container">
+      <div className="container grid gap-10">
         <div className="flex items-center gap-6">
           <LogoHeader />
           <form onSubmit={handleSubmit} className="w-full">
@@ -88,7 +91,23 @@ const Header = () => {
             </svg>
           </button>
         </div>
-      </nav>
+        <nav>
+          <ul className="flex gap-6 items-center text-gray-400">
+            <li>
+              <NavLink to="/home">Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/products">Products</NavLink>
+            </li>
+            <li>
+              <a href="#">Categorias</a>
+            </li>
+            <li>
+              <a href="#">Meus pedidos</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 };
