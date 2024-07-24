@@ -1,6 +1,25 @@
 import { useState } from "react";
 import LogoHeader from "./icons/LogoHeader";
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
+
+const navLinks = [
+  {
+    text: "Home",
+    link: "/home",
+  },
+  {
+    text: "Products",
+    link: "/products",
+  },
+  {
+    text: "Categorias",
+    link: "/categories",
+  },
+  {
+    text: "Meus pedidos",
+    link: "/orders",
+  },
+];
 
 const Header = () => {
   const [search, setSearch] = useState("");
@@ -16,7 +35,9 @@ const Header = () => {
     <header className="py-6">
       <div className="container grid gap-10">
         <div className="flex items-center gap-6">
-          <LogoHeader />
+          <Link to="/home">
+            <LogoHeader />
+          </Link>
           <form onSubmit={handleSubmit} className="w-full">
             <label className="input input-bordered flex items-center gap-2">
               <input
@@ -93,18 +114,22 @@ const Header = () => {
         </div>
         <nav>
           <ul className="flex gap-6 items-center text-gray-400">
-            <li>
-              <NavLink to="/home">Home</NavLink>
-            </li>
-            <li>
-              <NavLink to="/products">Products</NavLink>
-            </li>
-            <li>
-              <a href="#">Categorias</a>
-            </li>
-            <li>
-              <a href="#">Meus pedidos</a>
-            </li>
+            {navLinks.map((link) => (
+              <li key={link.text}>
+                <NavLink
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? "text-accent"
+                      : isActive
+                      ? "text-primary border-b-2 border-primary pb-2"
+                      : ""
+                  }
+                  to={link.link}
+                >
+                  {link.text}
+                </NavLink>
+              </li>
+            ))}
           </ul>
         </nav>
       </div>
