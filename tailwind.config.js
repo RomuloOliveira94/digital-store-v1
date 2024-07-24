@@ -3,10 +3,12 @@ import daisyui from "daisyui";
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    colors: {
-      darkgray: "#1F1F1F"
-    },
+    colors: {},
     extend: {
+      colors: {
+        darkgray: "#1F1F1F",
+        ligthgray: "#8F8F8F",
+      },
     },
     container: {
       center: true,
