@@ -12,7 +12,7 @@ const BuyBox = ({
   children,
 }) => {
   return (
-    <div className="flex-1">
+    <div className="flex-1 flex flex-col gap-4">
       <h1 className="text-4xl font-bold">{name}</h1>
       <p>{reference}</p>
       <div className="flex items-center gap-2">
@@ -39,6 +39,7 @@ const BuyBox = ({
       </div>
       <p className="text-md font-normal">{description}</p>
       {children}
+      <button className="text-2xl btn btn-primary md:w-1/3">Comprar</button>
     </div>
   );
 };
