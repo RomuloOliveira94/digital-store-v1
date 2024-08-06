@@ -10,7 +10,7 @@ const ProductCard = ({ image, name, price, priceDiscount }) => {
           alt={name}
           width={292}
           height={321}
-          className="rounded-md"
+          className="rounded-md max-sm:w-full"
         />
       </div>
       <div className="flex flex-col gap-2">

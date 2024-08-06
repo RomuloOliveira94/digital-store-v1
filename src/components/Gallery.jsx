@@ -1,28 +1,27 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
-import homeSlide from "../data/home_slide.json";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import PropTypes from "prop-types";
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
 
-const Gallery = () => {
+const Gallery = ({ className, width, height, showThumbs, radius, images }) => {
   return (
-    <div className="mx-auto">
-      <Swiper
-        modules={[Navigation, Pagination]}
-        spaceBetween={0}
-        slidesPerView={1}
-        navigation
-        pagination={{ clickable: true }}
-      >
-        {homeSlide.map((slide) => (
-          <SwiperSlide key={slide.id}>
-            <img src={slide.image} alt={slide.title} className="w-full" />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+    <div className={className} width={width} height={height}>
+      <ImageGallery
+        items={images}
+        showPlayButton={false}
+        showFullscreenButton={false}
+        showThumbnails={showThumbs}
+      />
     </div>
   );
+};
+
+Gallery.propTypes = {
+  className: PropTypes.string,
+  width: PropTypes.number,
+  height: PropTypes.number,
+  showThumbs: PropTypes.bool,
+  images: PropTypes.array,
+  radius: PropTypes.string,
 };
 
 export default Gallery;

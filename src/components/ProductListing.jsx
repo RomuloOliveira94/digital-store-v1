@@ -1,9 +1,10 @@
 import ProductCard from "./ProductCard";
-import products from "../data/products.json";
+import PropTypes from "prop-types";
 import { Fragment } from "react";
-const ProductListing = () => {
+
+const ProductListing = ({ products }) => {
   return (
-    <div className="flex justify-between flex-wrap">
+    <div className="flex justify-between flex-wrap gap-4 md:gap-0">
       {products.map((product) => (
         <Fragment key={product.id}>
           <ProductCard
@@ -16,6 +17,10 @@ const ProductListing = () => {
       ))}
     </div>
   );
+};
+
+ProductListing.propTypes = {
+  products: PropTypes.array,
 };
 
 export default ProductListing;

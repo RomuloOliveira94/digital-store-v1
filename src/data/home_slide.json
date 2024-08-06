@@ -1,22 +1,42 @@
 [
   {
     "id": 1,
-    "image": "/home-slide-1.jpeg"
+    "original": "/home-slide-1.jpeg",
+    "thumbnail": "/home-slide-1.jpeg"
   },
   {
     "id": 2,
-    "image": "/home-slide-2.jpeg"
+    "original": "/home-slide-2.jpeg",
+    "thumbnail": "/home-slide-2.jpeg"
   },
   {
     "id": 3,
-    "image": "/home-slide-3.jpeg"
+    "original": "/home-slide-3.jpeg",
+    "thumbnail": "/home-slide-3.jpeg"
   },
   {
     "id": 4,
-    "image": "/home-slide-4.jpeg"
+    "original": "/home-slide-4.jpeg",
+    "thumbnail": "/home-slide-4.jpeg"
   },
   {
     "id": 5,
-    "image": "/home-slide-5.jpeg"
+    "original": "/home-slide-5.jpeg",
+    "thumbnail": "/home-slide-5.jpeg"
+  },
+  {
+    "id": 6,
+    "original": "/home-slide-6.jpeg",
+    "thumbnail": "/home-slide-6.jpeg"
+  },
+  {
+    "id": 7,
+    "original": "/home-slide-7.jpeg",
+    "thumbnail": "/home-slide-7.jpeg"
+  },
+  {
+    "id": 8,
+    "original": "/home-slide-8.jpeg",
+    "thumbnail": "/home-slide-8.jpeg"
   }
 ]

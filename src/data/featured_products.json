@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Tenis 1",
+    "image": "/collection-1.png",
+    "price": 200,
+    "priceDiscount": 149.9
+  },
+  {
+    "id": 2,
+    "name": "Tenis 2",
+    "image": "/collection-2.png",
+    "price": 555,
+    "priceDiscount": ""
+  },
+  {
+    "id": 3,
+    "name": "Tenis 3",
+    "image": "/collection-3.png",
+    "price": 33,
+    "priceDiscount": ""
+  }
+]
