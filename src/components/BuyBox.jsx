@@ -12,8 +12,8 @@ const BuyBox = ({
   children,
 }) => {
   return (
-    <div>
-      <h1 className="text-2xl font-bold">{name}</h1>
+    <div className="flex-1">
+      <h1 className="text-4xl font-bold">{name}</h1>
       <p>{reference}</p>
       <div className="flex items-center gap-2">
         <span className="flex items-center gap-2">

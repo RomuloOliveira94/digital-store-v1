@@ -7,12 +7,11 @@ import home_slide_images from "../data/home_slide.json";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="flex flex-col gap-4">
       <Gallery images={home_slide_images} />
       <Section
         title="Coleções em destaque"
         titleAlign={""}
-        link={{ text: "Ver", href: "#" }}
       >
         <div className="flex items-center gap-4 flex-col md:flex-row">
           {featured_products.map((product) => (
