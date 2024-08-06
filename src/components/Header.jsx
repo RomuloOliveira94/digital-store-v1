@@ -49,13 +49,19 @@ const Header = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const handleCloseMenu = () => {
+    if (window.innerWidth <= 768) {
+      setIsMenuOpen(!isMenuOpen);
+    }
+  };
+
   return (
-    <header className="py-6">
+    <header className="py-6 fixed z-10 bg-white w-full shadow-sm">
       <div className="container grid gap-2 md:gap-6 px-6">
         <div className="flex items-center justify-between lg:gap-6">
           <button
             className="btn btn-ghost p-0 lg:hidden"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            onClick={handleCloseMenu}
           >
             <BurgerButton />
           </button>
@@ -186,6 +192,7 @@ const Header = () => {
                           : ""
                       }
                       to={link.link}
+                      onClick={handleCloseMenu}
                     >
                       {link.text}
                     </NavLink>
@@ -194,10 +201,18 @@ const Header = () => {
               </ul>
             </nav>
             <div className="flex gap-2 items-center max-sm:justify-center lg:hidden">
-              <button className="btn btn-link text-gray-400">
+              <button
+                className="btn btn-link text-gray-400"
+                onClick={handleCloseMenu}
+              >
                 Cadastre-se
               </button>
-              <button className="btn btn-primary btn-sm w-28">Entrar</button>
+              <button
+                className="btn btn-primary btn-sm w-28"
+                onClick={handleCloseMenu}
+              >
+                Entrar
+              </button>
             </div>
           </>
         )}
