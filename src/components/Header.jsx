@@ -36,9 +36,17 @@ const Header = () => {
   };
 
   useEffect(() => {
-    if (window.screen.width > 768) {
-      setIsMenuOpen(true);
-    }
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setIsMenuOpen(true);
+      } else {
+        setIsMenuOpen(false);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
@@ -185,7 +193,7 @@ const Header = () => {
                 ))}
               </ul>
             </nav>
-            <div className="flex gap-2 items-center justify-center lg:hidden">
+            <div className="flex gap-2 items-center max-sm:justify-center lg:hidden">
               <button className="btn btn-link text-gray-400">
                 Cadastre-se
               </button>
