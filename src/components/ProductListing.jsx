@@ -8,6 +8,7 @@ const ProductListing = ({ products }) => {
       {products.map((product) => (
         <Fragment key={product.id}>
           <ProductCard
+            id={product.id}
             image={product.image}
             name={product.name}
             price={product.price}

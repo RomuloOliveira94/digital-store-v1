@@ -3,35 +3,455 @@
     "id": 1,
     "name": "Tenis 1",
     "image": "/produc-image-1.jpeg",
+    "stars": 4,
+    "rating": 24,
+    "images": [
+      {
+        "original": "/produc-image-1.jpeg",
+        "thumbnail": "/produc-image-1.jpeg"
+      },
+      {
+        "original": "/produc-image-1.jpeg",
+        "thumbnail": "/produc-image-1.jpeg"
+      },
+      {
+        "original": "/produc-image-1.jpeg",
+        "thumbnail": "/produc-image-1.jpeg"
+      },
+      {
+        "original": "/produc-image-1.jpeg",
+        "thumbnail": "/produc-image-1.jpeg"
+      },
+      {
+        "original": "/produc-image-1.jpeg",
+        "thumbnail": "/produc-image-1.jpeg"
+      }
+    ],
     "price": "200",
-    "priceDiscount": "149.9"
+    "priceDiscount": "149.9",
+    "options": [
+      {
+        "id": 1,
+        "name": "Cores",
+        "type": "color",
+        "shape": "circle",
+        "values": [
+          {
+            "id": 1,
+            "name": "Azul",
+            "value": "#0000CD"
+          },
+          {
+            "id": 2,
+            "name": "Verde",
+            "value": "#008B8B"
+          },
+          {
+            "id": 3,
+            "name": "Marron",
+            "value": "#8B4513"
+          },
+          {
+            "id": 4,
+            "name": "Preto",
+            "value": "#000000"
+          },
+          {
+            "id": 5,
+            "name": "Branco",
+            "value": "#FFFFFF"
+          },
+          {
+            "id": 6,
+            "name": "Vermelho",
+            "value": "#DC143C"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Tamanhos",
+        "type": "size",
+        "shape": "square",
+        "values": [
+          {
+            "id": 1,
+            "name": "P"
+          },
+          {
+            "id": 2,
+            "name": "M"
+          },
+          {
+            "id": 3,
+            "name": "G"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": 2,
     "name": "Tenis 2",
     "image": "/produc-image-2.jpeg",
+    "stars": 2,
+    "rating": 22,
+    "images": [
+      {
+        "original": "/produc-image-2.jpeg",
+        "thumbnail": "/produc-image-2.jpeg"
+      },
+      {
+        "original": "/produc-image-2.jpeg",
+        "thumbnail": "/produc-image-2.jpeg"
+      },
+      {
+        "original": "/produc-image-2.jpeg",
+        "thumbnail": "/produc-image-2.jpeg"
+      },
+      {
+        "original": "/produc-image-2.jpeg",
+        "thumbnail": "/produc-image-2.jpeg"
+      },
+      {
+        "original": "/produc-image-2.jpeg",
+        "thumbnail": "/produc-image-2.jpeg"
+      }
+    ],
     "price": "142",
-    "priceDiscount": ""
+    "priceDiscount": "",
+    "options": [
+      {
+        "id": 1,
+        "name": "Cores",
+        "type": "color",
+        "shape": "circle",
+        "values": [
+          {
+            "id": 1,
+            "name": "Azul",
+            "value": "#0000CD"
+          },
+          {
+            "id": 2,
+            "name": "Verde",
+            "value": "#008B8B"
+          },
+          {
+            "id": 3,
+            "name": "Marron",
+            "value": "#8B4513"
+          },
+          {
+            "id": 4,
+            "name": "Preto",
+            "value": "#000000"
+          },
+          {
+            "id": 5,
+            "name": "Branco",
+            "value": "#FFFFFF"
+          },
+          {
+            "id": 6,
+            "name": "Vermelho",
+            "value": "#DC143C"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Tamanhos",
+        "type": "size",
+        "shape": "square",
+        "values": [
+          {
+            "id": 1,
+            "name": "P"
+          },
+          {
+            "id": 2,
+            "name": "M"
+          },
+          {
+            "id": 3,
+            "name": "G"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": 3,
     "name": "Tenis 3",
     "image": "/produc-image-3.jpeg",
+    "stars": 5,
+    "rating": 65,
+    "images": [
+      {
+        "original": "/produc-image-3.jpeg",
+        "thumbnail": "/produc-image-3.jpeg"
+      },
+      {
+        "original": "/produc-image-3.jpeg",
+        "thumbnail": "/produc-image-3.jpeg"
+      },
+      {
+        "original": "/produc-image-3.jpeg",
+        "thumbnail": "/produc-image-3.jpeg"
+      },
+      {
+        "original": "/produc-image-3.jpeg",
+        "thumbnail": "/produc-image-3.jpeg"
+      },
+      {
+        "original": "/produc-image-3.jpeg",
+        "thumbnail": "/produc-image-3.jpeg"
+      }
+    ],
     "price": "212",
-    "priceDiscount": ""
+    "priceDiscount": "",
+    "options": [
+      {
+        "id": 1,
+        "name": "Cores",
+        "type": "color",
+        "shape": "circle",
+        "values": [
+          {
+            "id": 1,
+            "name": "Azul",
+            "value": "#0000CD"
+          },
+          {
+            "id": 2,
+            "name": "Verde",
+            "value": "#008B8B"
+          },
+          {
+            "id": 3,
+            "name": "Marron",
+            "value": "#8B4513"
+          },
+          {
+            "id": 4,
+            "name": "Preto",
+            "value": "#000000"
+          },
+          {
+            "id": 5,
+            "name": "Branco",
+            "value": "#FFFFFF"
+          },
+          {
+            "id": 6,
+            "name": "Vermelho",
+            "value": "#DC143C"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Tamanhos",
+        "type": "size",
+        "shape": "square",
+        "values": [
+          {
+            "id": 1,
+            "name": "P"
+          },
+          {
+            "id": 2,
+            "name": "M"
+          },
+          {
+            "id": 3,
+            "name": "G"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": 4,
     "name": "Tenis 4",
     "image": "/produc-image-4.jpeg",
+    "stars": 3,
+    "rating": 33,
+    "images": [
+      {
+        "original": "/produc-image-4.jpeg",
+        "thumbnail": "/produc-image-4.jpeg"
+      },
+      {
+        "original": "/produc-image-4.jpeg",
+        "thumbnail": "/produc-image-4.jpeg"
+      },
+      {
+        "original": "/produc-image-4.jpeg",
+        "thumbnail": "/produc-image-4.jpeg"
+      },
+      {
+        "original": "/produc-image-4.jpeg",
+        "thumbnail": "/produc-image-4.jpeg"
+      },
+      {
+        "original": "/produc-image-4.jpeg",
+        "thumbnail": "/produc-image-4.jpeg"
+      }
+    ],
     "price": "332",
-    "priceDiscount": "34"
+    "priceDiscount": "34",
+    "options": [
+      {
+        "id": 1,
+        "name": "Cores",
+        "type": "color",
+        "shape": "circle",
+        "values": [
+          {
+            "id": 1,
+            "name": "Azul",
+            "value": "#0000CD"
+          },
+          {
+            "id": 2,
+            "name": "Verde",
+            "value": "#008B8B"
+          },
+          {
+            "id": 3,
+            "name": "Marron",
+            "value": "#8B4513"
+          },
+          {
+            "id": 4,
+            "name": "Preto",
+            "value": "#000000"
+          },
+          {
+            "id": 5,
+            "name": "Branco",
+            "value": "#FFFFFF"
+          },
+          {
+            "id": 6,
+            "name": "Vermelho",
+            "value": "#DC143C"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Tamanhos",
+        "type": "size",
+        "shape": "square",
+        "values": [
+          {
+            "id": 1,
+            "name": "P"
+          },
+          {
+            "id": 2,
+            "name": "M"
+          },
+          {
+            "id": 3,
+            "name": "G"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": 5,
     "name": "Tenis 5",
     "image": "/produc-image-5.jpeg",
+    "stars": 5,
+    "rating": 12,
+    "images": [
+      {
+        "original": "/produc-image-5.jpeg",
+        "thumbnail": "/produc-image-5.jpeg"
+      },
+      {
+        "original": "/produc-image-5.jpeg",
+        "thumbnail": "/produc-image-5.jpeg"
+      },
+      {
+        "original": "/produc-image-5.jpeg",
+        "thumbnail": "/produc-image-5.jpeg"
+      },
+      {
+        "original": "/produc-image-5.jpeg",
+        "thumbnail": "/produc-image-5.jpeg"
+      },
+      {
+        "original": "/produc-image-5.jpeg",
+        "thumbnail": "/produc-image-5.jpeg"
+      }
+    ],
     "price": "142",
-    "priceDiscount": "21"
+    "priceDiscount": "21",
+    "options": [
+      {
+        "id": 1,
+        "name": "Cores",
+        "type": "color",
+        "shape": "circle",
+        "values": [
+          {
+            "id": 1,
+            "name": "Azul",
+            "value": "#0000CD"
+          },
+          {
+            "id": 2,
+            "name": "Verde",
+            "value": "#008B8B"
+          },
+          {
+            "id": 3,
+            "name": "Marron",
+            "value": "#8B4513"
+          },
+          {
+            "id": 4,
+            "name": "Preto",
+            "value": "#000000"
+          },
+          {
+            "id": 5,
+            "name": "Branco",
+            "value": "#FFFFFF"
+          },
+          {
+            "id": 6,
+            "name": "Vermelho",
+            "value": "#DC143C"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Tamanhos",
+        "type": "size",
+        "shape": "square",
+        "values": [
+          {
+            "id": 1,
+            "name": "P"
+          },
+          {
+            "id": 2,
+            "name": "M"
+          },
+          {
+            "id": 3,
+            "name": "G"
+          }
+        ]
+      }
+    ]
   }
 ]

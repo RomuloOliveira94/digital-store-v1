@@ -1,0 +1,44 @@
+import { convertToCurrency } from "../helpers/helpers";
+import StarIcon from "./icons/StarIcon";
+
+const BuyBox = ({
+  name,
+  reference,
+  stars,
+  rating,
+  price,
+  priceDiscount,
+  description,
+  children,
+}) => {
+  return (
+    <div>
+      <h1 className="text-2xl font-bold">{name}</h1>
+      <p>{reference}</p>
+      <div className="flex items-center gap-2">
+        <span className="flex items-center gap-2">
+          {stars} <StarIcon className="mb-0.5 stroke-warning h-4 w-4" />
+        </span>
+        <span>({rating} avaliações)</span>
+      </div>
+      <div className="flex items-center gap-3">
+        <span
+          className={`${
+            priceDiscount
+              ? "text-gray-500 line-through text-sm"
+              : "font-semibold text-lg"
+          }`}
+        >
+          {convertToCurrency(price)}
+        </span>
+        <span className="font-semibold text-lg">
+          {convertToCurrency(priceDiscount)}
+        </span>
+      </div>
+      <p className="text-md font-normal">{description}</p>
+      {children}
+    </div>
+  );
+};
+
+export default BuyBox;

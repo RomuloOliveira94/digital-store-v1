@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 
-const Gallery = ({ className, width, height, showThumbs, radius, images }) => {
+const Gallery = ({ className, width, height, showThumbs, images }) => {
   return (
     <div className={className} width={width} height={height}>
       <ImageGallery
@@ -21,7 +21,6 @@ Gallery.propTypes = {
   height: PropTypes.number,
   showThumbs: PropTypes.bool,
   images: PropTypes.array,
-  radius: PropTypes.string,
 };
 
 export default Gallery;
