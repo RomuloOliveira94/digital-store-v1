@@ -9,7 +9,7 @@ const ProductOptions = ({ option }) => {
               <li key={opt.id}>
                 <div className="flex">
                   <span
-                    className={`rounded-full h-[31px] w-[31px] inline-block`}
+                    className={`rounded-full h-[31px] w-[31px] inline-block shadow-sm`}
                     style={{ backgroundColor: opt.value }}
                   ></span>
                 </div>

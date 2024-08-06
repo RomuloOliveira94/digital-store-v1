@@ -10,17 +10,17 @@ const navLinks = [
     link: "/",
   },
   {
-    text: "Products",
+    text: "Produtos",
     link: "/products",
   },
-  {
-    text: "Categorias",
-    link: "/categories",
-  },
-  {
-    text: "Meus pedidos",
-    link: "/orders",
-  },
+  // {
+  //   text: "Categorias",
+  //   link: "/categories",
+  // },
+  // {
+  //   text: "Meus pedidos",
+  //   link: "/orders",
+  // },
 ];
 
 const Header = () => {

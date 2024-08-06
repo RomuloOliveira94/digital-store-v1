@@ -12,7 +12,7 @@ const ProductViewPage = () => {
   );
 
   return (
-    <div className="flex justify-center gap-4">
+    <div className="flex justify-center flex-col md:flex-row gap-4">
       <Gallery images={product.images} />
       <BuyBox
         name={product.name}

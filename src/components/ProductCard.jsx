@@ -16,11 +16,11 @@ const ProductCard = ({ image, name, price, priceDiscount, id }) => {
           />
         </div>
         <div className="flex flex-col gap-2">
-          <h3>{name}</h3>
+          <h3 className="font-semibold text-lg mt-2">{name}</h3>
           <div className="flex gap-4 items-center">
             {priceDiscount ? (
               <>
-                <p className="text-ligthgray line-through">
+                <p className="text-gray-400 line-through">
                   {convertToCurrency(price)}
                 </p>
                 <p className="text-darkgray">
