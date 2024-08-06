@@ -31,9 +31,11 @@ const BuyBox = ({
         >
           {convertToCurrency(price)}
         </span>
-        <span className="font-semibold text-lg">
-          {convertToCurrency(priceDiscount)}
-        </span>
+        {priceDiscount && (
+          <span className="font-semibold text-lg">
+            {convertToCurrency(priceDiscount)}
+          </span>
+        )}
       </div>
       <p className="text-md font-normal">{description}</p>
       {children}
