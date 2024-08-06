@@ -2,7 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import Gallery from "../components/Gallery";
 import BuyBox from "../components/BuyBox";
 import products from "../data/products.json";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProductOptions from "../components/ProductOptions";
 import Section from "../components/Section";
 import ProductListing from "../components/ProductListing";
@@ -12,6 +12,11 @@ const ProductViewPage = () => {
   const [product, setProduct] = useState(
     products.find((prod) => prod.id == id)
   );
+
+  useEffect(() => {
+    setProduct(products.find((prod) => prod.id == id));
+    window.scrollTo(0, 0);
+  }, [id]);
 
   return (
     <div className="flex flex-col gap-8">
