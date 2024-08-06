@@ -1,9 +1,9 @@
-const LogoHeader = () => {
+import PropTypes from "prop-types";
+
+const LogoHeader = ({ styles }) => {
   return (
     <svg
-      className="w-[253px]"
-      width="253"
-      height="44"
+      className={styles}
       viewBox="0 0 253 44"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -18,6 +18,10 @@ const LogoHeader = () => {
       />
     </svg>
   );
+};
+
+LogoHeader.propTypes = {
+  styles: PropTypes.string,
 };
 
 export default LogoHeader;

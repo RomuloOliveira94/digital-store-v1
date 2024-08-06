@@ -18,7 +18,7 @@ const Footer = () => {
   return (
     <footer className="bg-darkgray">
       <div className="container py-6">
-        <div className="flex flex-col md:flex-row gap-44">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-44 px-6">
           <div className="flex flex-col gap-8">
             <LogoFooter />
             <p>
