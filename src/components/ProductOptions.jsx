@@ -68,10 +68,10 @@ const ProductOptions = ({ option, optionsSelected, setOptionsSelected }) => {
                     ? `flex items-center justify-center bg-primary text-white rounded`
                     : `rounded flex items-center justify-center`
                 }
+                onClick={() => handleSelect(opt.id, option.type)}
               >
                 <span
                   className={`rounded h-[46px] w-[46px] border flex items-center justify-center`}
-                  onClick={() => handleSelect(opt.id, option.type)}
                 >
                   {opt.name}
                 </span>
