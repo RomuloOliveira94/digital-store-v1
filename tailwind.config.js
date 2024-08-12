@@ -7,6 +7,7 @@ export default {
       colors: {
         darkgray: "#1F1F1F",
         ligthgray: "#F9F8FE",
+        darkgray3: "#666666",
       },
     },
     container: {

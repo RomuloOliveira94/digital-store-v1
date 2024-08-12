@@ -30,6 +30,7 @@ const ProductViewPage = () => {
           priceDiscount={product.priceDiscount}
           stars={product.stars}
           rating={product.rating}
+          reference={product.reference}
         >
           {product.options.map((option) => (
             <ProductOptions

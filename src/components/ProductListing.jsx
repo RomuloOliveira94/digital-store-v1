@@ -4,7 +4,7 @@ import { Fragment } from "react";
 
 const ProductListing = ({ products }) => {
   return (
-    <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-4">
+    <div className="grid xl:grid-cols-5 sm:grid-cols-3 gap-4">
       {products.map((product) => (
         <Fragment key={product.id}>
           <ProductCard

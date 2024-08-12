@@ -13,8 +13,10 @@ const BuyBox = ({
 }) => {
   return (
     <div className="flex-1 flex flex-col gap-4">
-      <h1 className="text-4xl font-bold">{name}</h1>
-      <p>{reference}</p>
+      <div className="grid gap-0.5">
+        <h1 className="text-4xl font-bold">{name}</h1>
+        <p className="text-md text-darkgray3">REF:{reference}</p>
+      </div>
       <div className="flex items-center gap-2">
         <span className="flex items-center gap-2">
           {stars} <StarIcon className="mb-0.5 stroke-warning h-4 w-4" />
@@ -30,7 +32,7 @@ const BuyBox = ({
         <span
           className={`${
             priceDiscount
-              ? "text-gray-500 line-through text-sm"
+              ? "text-darkgray3 line-through text-sm"
               : "font-semibold text-4xl"
           }`}
         >
@@ -38,13 +40,13 @@ const BuyBox = ({
         </span>
       </div>
       <div className="flex flex-col gap-2">
-        <h3 className="text-gray-500 font-semibold">
-          Descrição do produto:{" "}
-        </h3>
+        <h3 className="text-darkgray3 font-semibold">Descrição do produto: </h3>
         <p className="text-md font-normal">{description}</p>
       </div>
       {children}
-      <button className="text-2xl btn btn-primary lg:w-2/3 w-full">Comprar</button>
+      <button className="text-2xl btn btn-primary lg:w-2/3 w-full">
+        Comprar
+      </button>
     </div>
   );
 };
