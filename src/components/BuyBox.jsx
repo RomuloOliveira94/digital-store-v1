@@ -44,7 +44,7 @@ const BuyBox = ({
         <p className="text-md font-normal">{description}</p>
       </div>
       {children}
-      <button className="text-2xl btn btn-primary md:w-1/3">Comprar</button>
+      <button className="text-2xl btn btn-primary lg:w-2/3 w-full">Comprar</button>
     </div>
   );
 };
