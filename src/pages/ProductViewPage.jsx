@@ -12,6 +12,7 @@ const ProductViewPage = () => {
   const [product, setProduct] = useState(
     products.find((prod) => prod.id == id)
   );
+  const [optionsSelected, setOptionsSelected] = useState([]);
 
   useEffect(() => {
     setProduct(products.find((prod) => prod.id == id));
@@ -34,7 +35,8 @@ const ProductViewPage = () => {
             <ProductOptions
               key={option.id}
               option={option}
-              shape={product.shape}
+              optionsSelected={optionsSelected}
+              setOptionsSelected={setOptionsSelected}
             />
           ))}
         </BuyBox>
