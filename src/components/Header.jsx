@@ -157,6 +157,7 @@ const Header = () => {
                 className="grow"
                 placeholder="Pesquisar"
                 onChange={(e) => setSearch(e.target.value)}
+                onKeyDown={handleSubmit}
                 name="search"
                 autoFocus
               />

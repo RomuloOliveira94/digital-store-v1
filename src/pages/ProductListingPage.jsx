@@ -2,10 +2,14 @@ import { useEffect, useState } from "react";
 import FilterGroup from "../components/FilterGroup";
 import ProductListing from "../components/ProductListing";
 import Section from "../components/Section";
-import products from "../data/products.json";
+import productsDb from "../data/products.json";
+import { useSearchParams } from "react-router-dom";
 
 const ProductListingPage = () => {
+  const [products, setProducts] = useState(productsDb);
   const [showFilters, setShowFilters] = useState(false);
+  const [searchParams] = useSearchParams();
+  const search = searchParams.get("search");
 
   useEffect(() => {
     const handleResize = () => {
@@ -20,6 +24,16 @@ const ProductListingPage = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  useEffect(() => {
+    if (search) {
+      setProducts(
+        productsDb.filter((product) =>
+          product.name.toLowerCase().includes(search.toLowerCase())
+        )
+      );
+    }
+  }, [search]);
 
   return (
     <div className="grid lg:grid-cols-6 md:gap-10">
