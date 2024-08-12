@@ -22,22 +22,27 @@ const BuyBox = ({
         <span>({rating} avaliações)</span>
       </div>
       <div className="flex items-center gap-3">
+        {priceDiscount && (
+          <span className="font-semibold text-4xl">
+            {convertToCurrency(priceDiscount)}
+          </span>
+        )}
         <span
           className={`${
             priceDiscount
               ? "text-gray-500 line-through text-sm"
-              : "font-semibold text-lg"
+              : "font-semibold text-4xl"
           }`}
         >
           {convertToCurrency(price)}
         </span>
-        {priceDiscount && (
-          <span className="font-semibold text-lg">
-            {convertToCurrency(priceDiscount)}
-          </span>
-        )}
       </div>
-      <p className="text-md font-normal">{description}</p>
+      <div className="flex flex-col gap-2">
+        <h3 className="text-gray-500 font-semibold">
+          Descrição do produto:{" "}
+        </h3>
+        <p className="text-md font-normal">{description}</p>
+      </div>
       {children}
       <button className="text-2xl btn btn-primary md:w-1/3">Comprar</button>
     </div>

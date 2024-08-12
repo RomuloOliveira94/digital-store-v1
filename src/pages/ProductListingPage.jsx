@@ -28,16 +28,20 @@ const ProductListingPage = () => {
   useEffect(() => {
     if (search) {
       setProducts(
-        productsDb.filter((product) =>
-          product.name.toLowerCase().includes(search.toLowerCase())
+        productsDb.filter(
+          (product) =>
+            product.name.toLowerCase().includes(search.toLowerCase()) ||
+            product.price.toString().includes(search)
         )
       );
+    } else {
+      setProducts(productsDb);
     }
   }, [search]);
 
   return (
-    <div className="grid lg:grid-cols-6 md:gap-10">
-      <div className="flex flex-col mb-4 lg:mb-0">
+    <div className="flex flex-col lg:flex-row lg:gap-12">
+      <div className="flex flex-col mb-4 lg:mb-0 w-1/6">
         <div className="flex max-sm:items-center gap-4">
           <div className="flex flex-col w-full mb-6">
             <h1>Ordernar por</h1>
@@ -111,10 +115,16 @@ const ProductListingPage = () => {
           </div>
         )}
       </div>
-      <div className="lg:col-span-5">
-        <Section title="Produtos">
-          <ProductListing products={products} />
-        </Section>
+      <div>
+        {products.length > 0 ? (
+          <Section title="Produtos" style="flex">
+            <ProductListing products={products} />
+          </Section>
+        ) : (
+          <h1 className="text-center font-semibold my-6 text-2xl">
+            Nenhum produto encontrado...
+          </h1>
+        )}
       </div>
     </div>
   );

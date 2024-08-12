@@ -31,8 +31,8 @@ const ProductOptions = ({ option, optionsSelected, setOptionsSelected }) => {
   };
 
   return (
-    <div className="grid gap-1">
-      <h3 className="font-semibold text-lg">{option.name}</h3>
+    <div className="grid gap-2">
+      <h3 className="font-semibold text-gray-500">{option.name}:</h3>
       <ul className={`flex gap-2`}>
         {option.values.map((opt) => {
           if (option.type === "color") {

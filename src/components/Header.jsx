@@ -75,6 +75,7 @@ const Header = () => {
                 className="grow"
                 placeholder="Pesquisar"
                 onChange={(e) => setSearch(e.target.value)}
+                onKeyUp={handleSubmit}
                 name="search"
                 autoFocus
               />
@@ -157,7 +158,7 @@ const Header = () => {
                 className="grow"
                 placeholder="Pesquisar"
                 onChange={(e) => setSearch(e.target.value)}
-                onKeyDown={handleSubmit}
+                onKeyUp={handleSubmit}
                 name="search"
                 autoFocus
               />

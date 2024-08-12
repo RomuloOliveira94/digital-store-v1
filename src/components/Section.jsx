@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const Section = ({ title, titleAlign, link, children }) => {
+const Section = ({ title, titleAlign, link, children, style }) => {
   return (
     <section className="container">
       <div className="flex items-center justify-between mb-6 w-full">
@@ -32,7 +32,7 @@ const Section = ({ title, titleAlign, link, children }) => {
           </a>
         )}
       </div>
-      <div>{children}</div>
+      <div className={style}>{children}</div>
     </section>
   );
 };
